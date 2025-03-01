@@ -1,0 +1,108 @@
+
+                KM      Minutos
+MedellinManizale     196     248
+MedellinPereira      238     292
+ManizalePereira       53      68
+Pereira Armenia       46      56
+Pereira Cartago       30      42
+Cartago Armenia       50      72
+Cartago Tulua         87      75
+Armenia Tulua         87      84
+Tulua   Buga          28      32
+Buga    Buenaven     111     123
+Buga    Cali          66      73
+Buga    Palmira       52      47
+Palmira Cali          30      43
+Cali    Popayan      140     176
+Popayan Pitalito     157     232
+PitalitoMocoa        134     180
+Mocoa   Pasto        146     286
+Popayan Pasto        244     309
+PitalitoFlorenci     112     172
+PitalitoNeiva        187     220
+Popayan Neiva        271     361
+Neiva   El Espin     156     124
+El EspinIbague        56      56
+Ibague  Armenia       80     131
+Ibague  Mariquit     121     124
+MariquitManizale     119     194
+Ibague  Melgar        86      75
+El EspinMelgar        40      41
+GirardotMelgar        24      28
+GirardotIbague        68      65
+Melgar  Fusagasu      46      55
+GirardotAnapoima      53      65
+AnapoimaFunza         71     103
+FusagasuSoacha        45      82
+Soacha  Bogota        25      50
+Funza   Bogota        22      38
+Funza   Mariquit     170     216
+Bogota  La Dorad     191     222
+La DoradMedellin     243     271
+Bogota  Zipaquir      42      48
+Bogota  Guatavit      51      79
+ZipaquirGuatavit      51      60
+Bogota  Tunja        141     128
+Bogota  Villavic     123     176
+MedellinTunja        413     497
+Tunja   Duitama       58      58
+Duitama Sogamoso      20      30
+SogamosoYopal        130     274
+Bogota  Bucarama     398     524
+Tunja   Bucarama     282     381
+MedellinBucarama     383     386
+VillavicSan Jose     284     283
+MedellinQuibdo       230     331
+ManizaleQuibdo       273     375
+MedellinNecocli      383     484
+Necocli Monteria     148     182
+MedellinCaucasia     284     388
+CaucasiaMedellin     122     120
+CaucasiaBucarama     505     622
+MonteriaSincelej     122     129
+MonteriaCartagen     259     280
+SincelejCartagen     197     248
+SincelejBarranqu     239     255
+CartagenBarranqu     131     175
+BarranquBucarama     633     726
+SincelejValledup     388     446
+BarranquValledup     308     342
+BarranquSanta Ma     104     126
+Santa MaRiohacha     172     173
+ValledupRiohacha     159     205
+ValledupCucuta       547     664
+Cucuta  Bucarama     201     328
+RiohachaMaracaib     206     241
+Cucuta  Maracaib     444     479
+Cucuta  San Cris      51      92
+Cucuta  Barquisi     545     567
+BarquisiCaracas      372     321
+San CrisCaracas      807     680
+Pasto   Quito        331     372
+Quito   Guayaqui     427     452
+Quito   Santo Do     155     178
+Santo Domingo Gu     281     275
+GuayaquiLima        1473    1434
+Lima    Ayacucho     560     612
+AyacuchoCusco        571     744
+Lima    Ica          301     291
+Ica     Cusco        798     953
+Cusco   Arequipa     499     590
+Ica     Arequipa     707     764
+ArequipaAntofaga    1143     864
+ArequipaLa Paz       559     605
+La Paz  Cordoba     2012    1560
+AntofagaSantiago    1336     892
+SantiagoCordoba     1041     813
+La Paz  Asuncion    2133    1980
+Cordoba Asuncion    1241     965
+AsuncionMontevid    1332     993
+Cordoba Buenos A     750     539
+Buenos AMontevid     238     288
+MontevidPorto Al     806     609
+AsuncionPorto Al    1237    1043
+AsuncionSao Paul    1345    1051
+Porto AlSao Paul    1137     848
+La Paz  Sao Paul    2903    2520
+La Paz  Brasilia    3104    2700
+Sao PaulBrasilia    1005     742
