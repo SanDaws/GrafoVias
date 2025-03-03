@@ -11,13 +11,16 @@ namespace Grafovias.Classes
         public Destino(){
             CiudadesDestino= new Dictionary<string, (int, int)>();
         }
-        public int getDistancia(string NombreCiudad){
-            (int,int) tpl=CiudadesDestino[NombreCiudad];
-            return tpl.Item1;
+        public int GetDistancia(string NombreCiudad){
+            (int distancia,int tiempo) tpl=CiudadesDestino[NombreCiudad];
+            return tpl.distancia;
         }
-        public int getTiempo(string NombreCiudad){
-            (int,int) tpl=CiudadesDestino[NombreCiudad];
-            return tpl.Item1;
+        public int GetTiempo(string NombreCiudad){
+            (int distancia,int tiempo) tpl=CiudadesDestino[NombreCiudad];
+            return tpl.tiempo;
+        }
+        public void AddCiudad(string nombre, int distancia,int tiempo){
+            CiudadesDestino[nombre]=(distancia,tiempo);
         }
 
     }
