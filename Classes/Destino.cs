@@ -7,7 +7,7 @@ namespace Grafovias.Classes
 {
     public class Destino
     {
-        Dictionary<string,(int,int)> CiudadesDestino;
+        Dictionary<string,(int distancia,int tiempo)> CiudadesDestino;
         public Destino(){
             CiudadesDestino= new Dictionary<string, (int, int)>();
         }
@@ -21,6 +21,17 @@ namespace Grafovias.Classes
         }
         public void AddCiudad(string nombre, int distancia,int tiempo){
             CiudadesDestino[nombre]=(distancia,tiempo);
+        }
+        public override string ToString()
+        {
+            string concated="";
+            foreach (var item in CiudadesDestino)
+            {
+                string eachFormat=$@"{item}: {GetTiempo(item.Key)}/ {GetDistancia(item.Key)}, ";
+                concated +=eachFormat;
+                
+            }
+            return concated;
         }
 
     }
