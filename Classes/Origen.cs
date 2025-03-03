@@ -7,9 +7,24 @@ namespace Grafovias.Classes
 {
     public class Origen
     {
-        Dictionary<string,Destino> graf;
+        Dictionary<string,Destino> Ciudad;
         public Origen(){
-            graf=new Dictionary<string, Destino>();
+            Destino adyacentes= new Destino();
+            Ciudad=new Dictionary<string, Destino>();
+        }
+        public void AddCiudad(string Origen,string nombreDestino, int distancia,int tiempo){
+            if (!Ciudad.ContainsKey(Origen))
+            {
+                Ciudad[Origen]= new Destino();
+            }
+            Ciudad[Origen].AddCiudad(nombreDestino,distancia,tiempo);
+            
+            if (!Ciudad.ContainsKey(nombreDestino))
+            {
+                Ciudad[nombreDestino]= new Destino();
+            }
+            Ciudad[nombreDestino].AddCiudad(Origen,distancia,tiempo);
+            
         }
     }
 }
