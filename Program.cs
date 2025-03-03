@@ -1,4 +1,5 @@
 ﻿
+using Grafovias.Classes;
 using Grafovias.Data;
 
 namespace Grafovias;
@@ -7,20 +8,26 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+
+        Origen origenes= new Origen();
+        Import(origenes);
+        Console.WriteLine(origenes.ToString());
+
+       
+        
+    }
+    static void Import(Origen org){
         List<string> modeus=FileIO.UploadFile($@"Data\Datos vias.csv");
-        HashSet<string> ciudades=new HashSet<string>();
         foreach (string item in modeus)
         {
+            if (item==modeus[0])
+            {
+                continue;
+            }
             string[] divi= item.Split(";");
-            ciudades.Add(divi[0]);
-            ciudades.Add(divi[1]);
-        }
-
-        foreach (string recorrido in ciudades)
-        {
-            Console.WriteLine(recorrido);
+            org.AddCiudad(divi[0],divi[1],int.Parse(divi[2]),int.Parse(divi[3]));
             
         }
     }
+    
 }
