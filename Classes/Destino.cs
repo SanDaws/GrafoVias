@@ -27,7 +27,7 @@ namespace Grafovias.Classes
             string concated="";
             foreach (var item in CiudadesDestino)
             {
-                string eachFormat=$@"{item}: {GetTiempo(item.Key)}/ {GetDistancia(item.Key)}, ";
+                string eachFormat=$@"{item.Key}: {GetTiempo(item.Key)}/ {GetDistancia(item.Key)}, ";
                 concated +=eachFormat;
                 
             }
