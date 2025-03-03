@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-
+namespace Grafovias.Classes;
 class MatrixPresent
 {
     static void MetodoGraficarKM()   // Genera la matriz tomando la distancia en KM
@@ -110,8 +110,4 @@ class MatrixPresent
         }
     }
 
-    static void Main() {
-        MetodoGraficarKM();
-        MetodoGraficarTiempo();
-    }
 }
