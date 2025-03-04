@@ -4,7 +4,7 @@ using System.IO;
 namespace Grafovias.Classes;
 class MatrixPresent
 {
-    static void MetodoGraficarKM()   // Genera la matriz tomando la distancia en KM
+    public static void MetodoGraficarKM()   // Genera la matriz tomando la distancia en KM
     {
         string filePath = "C:/Users/ADMIN/Downloads/Datos vias.csv";        // Cambiar por directorio en el que este actualmente el .csv
         Dictionary<string, Dictionary<string, int>> matrizAdyKM = new Dictionary<string, Dictionary<string, int>>();
@@ -81,7 +81,7 @@ class MatrixPresent
         }
     }
 
-    static void MetodoGraficarTiempo()  // Genera la matriz tomando el tiempo
+    public static void MetodoGraficarTiempo()  // Genera la matriz tomando el tiempo
     {
         string filePath = "C:/Users/ADMIN/Downloads/Datos vias.csv";        // Cambiar por directorio en el que este actualmente el .csv
         Dictionary<string, Dictionary<string, int>> matrizAdyMin = new Dictionary<string, Dictionary<string, int>>();
