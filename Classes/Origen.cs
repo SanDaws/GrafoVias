@@ -7,7 +7,7 @@ namespace Grafovias.Classes
 {
     public class Origen
     {
-        Dictionary<string,Destino> Ciudad;
+        public Dictionary<string,Destino> Ciudad;
         public Origen(){
             Ciudad=new Dictionary<string, Destino>();
         }
@@ -25,6 +25,7 @@ namespace Grafovias.Classes
             Ciudad[nombreDestino].AddCiudad(Origen,distancia,tiempo);
             
         }
+        
         public override string ToString()
         {   
             string List="";
@@ -33,6 +34,9 @@ namespace Grafovias.Classes
                 List+= $@"{item.Key} : {Ciudad[item.Key].ToString()}"+ Environment.NewLine;
             }
             return List;
+        }
+        public Dictionary<string,(int distancia,int tiempo)> getDestinos(string ciudad){
+            return Ciudad[ciudad].GetCiudaddestino();
         }
     }
 }

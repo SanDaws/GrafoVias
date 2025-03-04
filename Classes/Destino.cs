@@ -7,7 +7,7 @@ namespace Grafovias.Classes
 {
     public class Destino
     {
-        Dictionary<string,(int distancia,int tiempo)> CiudadesDestino;
+        public Dictionary<string,(int distancia,int tiempo)> CiudadesDestino;
         public Destino(){
             CiudadesDestino= new Dictionary<string, (int, int)>();
         }
@@ -33,6 +33,6 @@ namespace Grafovias.Classes
             }
             return concated;
         }
-
+        public Dictionary<string,(int distancia,int tiempo)> GetCiudaddestino()=>CiudadesDestino;
     }
 }
