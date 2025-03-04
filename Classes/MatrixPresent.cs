@@ -38,9 +38,9 @@ class MatrixPresent
         }
 
         Console.WriteLine("Ingrese la ciudad 1");
-        var askcity1 = Console.ReadLine();
+        var askcity1 = Util.Exceptions.AntiEMptyorNull();
         Console.WriteLine("Ingrese la ciudad 2");
-        var askcity2 = Console.ReadLine();
+        var askcity2 = Util.Exceptions.AntiEMptyorNull();
 
         bool chck = matrizAdyKM[askcity1].ContainsKey(askcity2) ? true : false;
         if (chck == true) {
