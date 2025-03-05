@@ -12,10 +12,11 @@ class Program
         Origen origenes= new Origen();
         Import(origenes);
         Util.Util.Title("Carreteras de colombia",ConsoleColor.DarkBlue);
-        // Console.WriteLine(origenes.ToString());
-        // VerRutamasCorta(origenes);
-        // VerRutamasCortaDistancia(origenes);
+        Console.WriteLine(origenes.ToString());
+        VerRutamasCorta(origenes);
+        VerRutamasCortaDistancia(origenes);
         MatrixPresent.MetodoGraficarKM(origenes);
+        Console.ReadKey();
         MatrixPresent.MetodoGraficarTiempo(origenes);
         
 
