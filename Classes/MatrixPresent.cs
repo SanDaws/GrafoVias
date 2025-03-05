@@ -12,8 +12,8 @@ class MatrixPresent
         2 por lado
 
         */
-        int a=Console.WindowWidth;
-        Console.WriteLine(a);
+        // int a=Console.WindowWidth;
+        // Console.WriteLine(a);
         bool impresao= impresion();
 
         if (impresao) {
@@ -57,24 +57,33 @@ $@"{distancia,-3}");
 
         List<string> ciudades = ori.CiudadesName();
         Console.WriteLine("Matriz de Adyacencia (en Minutos)");
-        Console.Write("\t");
 
-        foreach (var ciudad in ciudades) {
-            Console.Write(ciudad + "\t");
-        } 
-        Console.WriteLine(new string('_',73));
+        Encabezado(ciudades);
+        Console.WriteLine(new string('_', Console.WindowWidth));
 
         foreach (var ciudad1 in ciudades) {
-            Console.Write(ciudad1 + "\t");
 
-            foreach (var ciudad2 in ciudades) {
-                int dis=ori.Ciudad[ciudad1].GetTiempo(ciudad2);
-                    int tiempo = ori.ExistIn(ciudad1,ciudad2) ? dis  : 0;
+                Console.Write(
+$@"{ciudad1,21}");
 
-                Console.Write(tiempo + "\t");
+                foreach (var ciudad2 in ciudades) {
+                    int tm=ori.Ciudad[ciudad1].GetTiempo(ciudad2);
+                    int tiempo = ori.ExistIn(ciudad1,ciudad2) ? tm  : 0;
+                    if (tiempo==0)
+                    {
+                        Util.Util.RedText(
+$@"{"__",-2}");
+
+
+                    }else{
+                        Util.Util.GreenText(
+$@"{tiempo,-3}");
+
+
+                    }
+                }
+                Console.WriteLine();
             }
-            Console.WriteLine();
-        }
     }
     public static void Proximidad(Origen ori){
         Console.WriteLine("Ingrese la ciudad 1");
