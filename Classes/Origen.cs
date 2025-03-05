@@ -38,5 +38,7 @@ namespace Grafovias.Classes
         public Dictionary<string,(int distancia,int tiempo)> getDestinos(string ciudad){
             return Ciudad[ciudad].GetCiudaddestino();
         }
+        public bool ExistIn(string origen,string Destino)=>(Ciudad.ContainsKey(origen)==true)?Ciudad[origen].Exist(Destino):false; 
+        public List<string> CiudadesName()=>new List<string>(Ciudad.Keys); 
     }
 }

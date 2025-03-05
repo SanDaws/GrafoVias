@@ -12,12 +12,20 @@ namespace Grafovias.Classes
             CiudadesDestino= new Dictionary<string, (int, int)>();
         }
         public int GetDistancia(string NombreCiudad){
-            (int distancia,int tiempo) tpl=CiudadesDestino[NombreCiudad];
-            return tpl.distancia;
+            if (Exist(NombreCiudad)){
+                (int distancia,int tiempo) tpl=CiudadesDestino[NombreCiudad];
+            return tpl.distancia;}else
+            {
+                return 0;
+            }
         }
         public int GetTiempo(string NombreCiudad){
-            (int distancia,int tiempo) tpl=CiudadesDestino[NombreCiudad];
-            return tpl.tiempo;
+            if (Exist(NombreCiudad)){
+                (int distancia,int tiempo) tpl=CiudadesDestino[NombreCiudad];
+            return tpl.tiempo;}else
+            {
+                return 0;
+            }
         }
         public void AddCiudad(string nombre, int distancia,int tiempo){
             CiudadesDestino[nombre]=(distancia,tiempo);
@@ -34,5 +42,9 @@ namespace Grafovias.Classes
             return concated;
         }
         public Dictionary<string,(int distancia,int tiempo)> GetCiudaddestino()=>CiudadesDestino;
+        public bool Exist(string ciudad)=> CiudadesDestino.ContainsKey(ciudad);
+        public List<string> DestinoNames()=>new List<string>(CiudadesDestino.Keys); 
+        
+            
     }
 }
