@@ -18,12 +18,7 @@ class Program
         MatrixPresent.MetodoGraficarKM(origenes);
         Console.ReadKey();
         MatrixPresent.MetodoGraficarTiempo(origenes);
-        
 
-        
-
-
-       
         
     }
       //importa todo el archivo y lo agrega a el grafo

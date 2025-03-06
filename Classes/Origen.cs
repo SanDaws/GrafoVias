@@ -39,6 +39,7 @@ namespace Grafovias.Classes
             return Ciudad[ciudad].GetCiudaddestino();
         }
         public bool ExistIn(string origen,string Destino)=>(Ciudad.ContainsKey(origen)==true)?Ciudad[origen].Exist(Destino):false; 
-        public List<string> CiudadesName()=>new List<string>(Ciudad.Keys); 
+        public bool Exist(string origen)=>(Ciudad.ContainsKey(origen)==true)?true:false;
+                public List<string> CiudadesName()=>new List<string>(Ciudad.Keys); 
     }
 }
